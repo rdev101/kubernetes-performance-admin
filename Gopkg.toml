@@ -1,0 +1,25 @@
+required = [
+            "sigs.k8s.io/controller-runtime",
+            "github.com/pkg/errors",
+            "k8s.io/client-go/rest",
+            "github.com/gin-gonic/gin",
+            ]
+
+[[constraint]]
+  name = "github.com/gin-gonic/gin"
+  version = "v1.4.0"
+  source = "github.com/gin-gonic/gin"
+
+[[constraint]]
+  name = "sigs.k8s.io/controller-runtime"
+  version = "v0.1.12"
+  source = "github.com/kubernetes-sigs/controller-runtime"
+
+[[constraint]]
+  name = "k8s.io/client-go"
+  version = "kubernetes-1.13.4"
+  source = "github.com/kubernetes/client-go"
+
+[prune]
+  go-tests = true
+  unused-packages = true
